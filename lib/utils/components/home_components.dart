@@ -72,9 +72,9 @@ Widget product(String name, String subName, String rate, String image) {
           children: [
             Expanded(
               // Allows the image to take more space
-              child: Image.network(
+              child: Image.asset(
                 image,
-                width: 120, // Increased width
+                width: 150, // Increased width
                 height: 300, // Increased height
               ),
             ),
@@ -209,7 +209,7 @@ Widget BurgerDetail(String nameText, String image) {
         ],
     
         ),
-        child: Image.network(image),
+        child: Image.asset(image),
       ),
       Padding(
         padding: const EdgeInsets.only(top: 70, right: 8, left: 8),
@@ -281,11 +281,11 @@ Widget CardUi(
           SizedBox(
             width: 10,
           ),
-          Image.network(
-            image,
-            width: 70,
-            height: 43,
-          ),
+          Image.asset(
+                  image,
+                  width: 70,
+                  height: 43,
+                ),
           SizedBox(
             width: 30,
           ),

@@ -27,7 +27,7 @@ class BurgerDetailScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.network(
+              Image.asset(
                 burger.image,
                 width: 400,
                 height: 300,
